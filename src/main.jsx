@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <AddCoffee></AddCoffee>
   },
   {
-    path: "/updatecoffee",
+    path: "/updatecoffee/:id",
     element: <UpdateCoffee></UpdateCoffee>
   },
   {

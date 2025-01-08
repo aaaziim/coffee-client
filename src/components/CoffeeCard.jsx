@@ -1,7 +1,7 @@
 import React from "react";
 import c1 from "../assets/1.png";
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
+
 
 const CoffeeCard = ({ c,handleDelete }) => {
   const { name, description, type, price, _id } = c;
@@ -18,7 +18,7 @@ const CoffeeCard = ({ c,handleDelete }) => {
           <h2>{price}</h2>
         </div>
         <div className="flex flex-col justify-around">
-          <Link>
+          <Link to={`/updatecoffee/${_id}`}>
             <button className="btn bg-sky-300 border-0 text-white font-thin">
               Edit
             </button>
