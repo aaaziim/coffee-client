@@ -20,7 +20,7 @@ const SignUp = () => {
             // New user has been created.
 
 
-            const doc = {email};
+            const doc = {email, createdAt: user.user.metadata.creationTime};
 
 
             fetch("http://localhost:5000/addusers", {

@@ -5,6 +5,7 @@ import './App.css'
 import { Link } from 'react-router-dom'
 import CoffeeCard from './components/CoffeeCard'
 import Swal from "sweetalert2";
+import Header from './components/Header'
 function App() {
 
   const [coffee, setCoffee] = useState([])
@@ -53,11 +54,7 @@ const handleDelete = (id) => {
   };
 
   return (
-    <>
-      <h1 className="text-6xl font-bold bg-gray-200 p-4 rounded-xl">Coffee Shop</h1>
-
-      <Link to="/addcoffee"><button className='btn my-2'>Add Coffee</button></Link>
-
+    <> 
       <h1 className="text-6xl font-bold bg-gray-200 p-4 rounded-xl">All Coffee</h1>
 
       <div className='grid grid-cols-2 gap-4 '>
